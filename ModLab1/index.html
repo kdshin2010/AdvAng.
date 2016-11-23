@@ -32,6 +32,13 @@
                     <input tye="button" class="btn btn-default" value="Clear with Service" ng-click="vm.clearServiceSession()" />
                 </div>
             </div>
+            <div class="forum-group row">
+                <div class="col-sm-8 col-sm-offset-4">
+                    <input tye="button" class="btn btn-primary" value="Save with Factory" ng-click="vm.setFactorySession()" />
+                    <input tye="button" class="btn btn-default" value="Retreive with Factory" ng-click="vm.getFactorySession()" />
+                    <input tye="button" class="btn btn-default" value="Clear with Factory" ng-click="vm.clearFactorySession()" />
+                </div>
+            </div>
             <pre>{{vm.model | json}}</pre>
         </div>
     </div>
@@ -40,6 +47,8 @@
     <script src="./app/app.js"></script>
     <script src="./app/sessionController.js"></script>
     <script src="./app/sessionService.js"></script>
+    <script src="./app/sessionFactory.js"></script>
+
 </body>
 
 </html>
